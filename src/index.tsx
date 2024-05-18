@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import './App.css';
+import "@blueprintjs/icons/lib/css/blueprint-icons.css";
+import "@blueprintjs/core/lib/css/blueprint.css";
 import App from './App';
 import {store} from "./store/configureStore";
 import { Provider } from 'react-redux';
@@ -9,7 +11,6 @@ import Privacy from "./components/common/Privacy"
 import {ContactPage} from "./components/controls/ContactSupportTool";
 import NumberViewer from "./components/viewers/NumberViewer";
 import {BrowserRouter, Switch, Route} from "react-router-dom";
-import { Example, type ExampleProps } from "@blueprintjs/docs-theme";
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
@@ -17,7 +18,6 @@ const root = ReactDOM.createRoot(
 
 const Application = (
     <Provider store={store}>
-        <Example options={false} >
         <BrowserRouter>
             <Switch>
                 <Route path="/privacy" component={Privacy} />
@@ -26,7 +26,6 @@ const Application = (
                 <Route exact={true} path='/' component={App}/>
             </Switch>
         </BrowserRouter>
-        </Example>
     </Provider>
 )
 
