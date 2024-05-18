@@ -1,0 +1,7 @@
+{
+  "name": "everything",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}

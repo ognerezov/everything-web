@@ -7,7 +7,7 @@ import {MIN_CHAPTER} from "../../model/Book";
 import {Position} from "@blueprintjs/core/lib/esm/common/position";
 import {isMobile} from "../../service/MediaInfo";
 import {
-    goto_start_label, message_support_label,
+    goto_start_label,
     no_input_label,
     numberOutOfRange,
     search,
@@ -137,28 +137,28 @@ class ChapterTools extends PureComponent<ChapterToolsProps,ChapterToolsState>{
                         {searchTextTool}
                         {this.state.processing ? <ProcessInfo/> :null }
                         <RulesViewer/>
-                        <a href={'/contacts'} target={'_blank'} rel="noopener noreferrer">
-                            <Button
-                                icon='envelope'
-                                minimal={true}
-                                intent={Intent.PRIMARY}>
-                                {V[message_support_label]}
-                            </Button>
-                        </a>
+                        {/*<a href={'/contacts'} target={'_self'} rel="noopener noreferrer">*/}
+                        {/*    <Button*/}
+                        {/*        icon='envelope'*/}
+                        {/*        minimal={true}*/}
+                        {/*        intent={Intent.PRIMARY}>*/}
+                        {/*        {V[message_support_label]}*/}
+                        {/*    </Button>*/}
+                        {/*</a>*/}
                     </Card>
                 </Drawer> :
                 <Card interactive={false} elevation={Elevation.TWO} className='page-tool-extension'>
                     {searchTextTool}
                     {this.state.processing ? <ProcessInfo/> :null }
                     <RulesViewer/>
-                    <a href={'/contacts'} target={'_blank'} rel="noopener noreferrer">
-                        <Button
-                            icon='envelope'
-                            minimal={true}
-                            intent={Intent.PRIMARY}>
-                            {V[message_support_label]}
-                        </Button>
-                    </a>
+                    {/*<a href={'/contacts'} target={'_blank'} rel="noopener noreferrer">*/}
+                    {/*    <Button*/}
+                    {/*        icon='envelope'*/}
+                    {/*        minimal={true}*/}
+                    {/*        intent={Intent.PRIMARY}>*/}
+                    {/*        {V[message_support_label]}*/}
+                    {/*    </Button>*/}
+                    {/*</a>*/}
                 </Card>)
             :null
         );

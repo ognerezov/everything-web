@@ -1,0 +1,8 @@
+{
+  "appId": "one.everything.from",
+  "appName": "everything",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "build",
+  "cordova": {}
+}
